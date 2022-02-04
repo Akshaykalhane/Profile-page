@@ -6,22 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./IMAGES/me.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="container">
-
-        <header>
-
-            <h1>Akshay Kalhane</h1>
-            <h2 style="color : gray">Web Developer</h2>
+        <nav id="navbar">
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="navin">
+                <li class="navi"><a href="#about">About</a></li>
+                <li class="navi"><a href="#skill">Skills</a></li>
+                <li class="navi"><a href="#contact">Contact</a></li>
+                <li class="navi"><a href="#project">Project</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+        <header class="header">
+            <p class="iam">Hi I Am</p>
+            <h1 class="mynae">Akshay Kalhane</h1>
+            <h2 class="post">Web Developer</h2>
 
         </header>
         <!-- <br> -->
         <!-- <hr> -->
         <!-- <center> -->
-        <div class="about">
+        <div class="about" id="about">
             <h2>About Me</h2>
             <div class="aboutcontent">
 
@@ -33,20 +45,24 @@
                         goals for
                         myself, so i have something to strive towards.
                     </p>
+                    <a href="#contact" class="contactbtn">Contact Me</a>
                 </div>
                 <div class="aboutimg">
-                    <img src="./IMAGES/me.jpg" alt="">
+                    <!-- <img src="./IMAGES/me.jpg" alt=""> -->
                 </div>
             </div>
         </div>
+
         <!-- </center> -->
         <!-- <br>
         <hr>
         <br> -->
-        <center>
 
-            <div class="skill">
-                <h2>Skills</h2>
+
+        <div class="skill" id="skill">
+            <h2>Skills</h2>
+            <div class="skillimg">
+
                 <img src="./IMAGES/c.png" alt="c">
                 <img src="./IMAGES/cpp.png" alt="cpp">
                 <img src="./IMAGES/html.png" alt="html">
@@ -54,41 +70,74 @@
                 <img src="./IMAGES/js.png" alt="js">
                 <img src="./IMAGES/java.png" alt="java">
             </div>
+        </div>
 
-        </center>
         <!-- <br> -->
         <!-- <hr> -->
 
-        <center>
-            <div class="hobby">
 
-                <h2>Hobbies</h2>
+        <div class="hobby">
 
-                <div class="hobbiesimg">
-                    <img src="./IMAGES/cricket.png" alt="cricket">
-                    <img src="./IMAGES/football.png" alt="football">
-                    <img src="./IMAGES/games.png" alt="video games">
-                    <img src="./IMAGES/bike.png" alt="bike riding">
-                    <img src="./IMAGES/book.png" alt="book reading">
-                    <img
-                        src="" alt="">
-                </div>
+            <h2>Hobbies</h2>
 
+            <div class="hobbiesimg">
+                <img src="./IMAGES/cricket.png" alt="cricket">
+                <img src="./IMAGES/football.png" alt="football">
+                <img src="./IMAGES/games.png" alt="video games">
+                <img src="./IMAGES/bike.png" alt="bike riding">
+                <img src="./IMAGES/book.png" alt="book reading">
+                <img src="" alt="">
             </div>
-        </center>
-        <!-- <hr> -->
-        <center>
-            <div class="location">
 
+        </div>
+
+        <section id="project">
+            <h2>Project</h2>
+            <div class="project-in">
+
+                <a href="#">
+                    <div class="procard">
+                        <div class="proimg">
+                            <img src="./IMAGES/proj1.png" alt="liquor delivery website">
+                        </div>
+                        <div class="procont">
+                            <h2>Zomato Clone</h2>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+
+                    <div class="procard">
+                        <div class="proimg"><img src="./IMAGES/project2.png" alt="liquor delivery website"></div>
+                        <div class="procont">
+                            <h2>Liquor Delivery Website</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- <hr> -->
+        <div id="contact">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <textarea name="" placeholder="Type Mesage here" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" class="form-btn">Send Me</button>
+                </form>
+            </div>
+            <div class="location">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238154.60907033904!2d79.08815459999998!3d21.145800399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd414447aa56fd3%3A0x66468f4405070534!2sArvi%2C%20Maharashtra%20442201!5e0!3m2!1sen!2sin!4v1637662062562!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-        </center>
+        </div>
         <!-- <br> -->
 
         <!-- <center>
-
+            
         </center> -->
         <!-- <br> -->
 
@@ -98,17 +147,21 @@
                 <h3>Follow Me On</h3>
                 <div class="footerimg">
 
-                    <a href="https://www.facebook.com/akshay.kalhane"
-                        target="_blank"><img src="./IMAGES/fb.png" alt="facebook"></a>
+                    <a href="https://www.facebook.com/akshay.kalhane" target="_blank"><img src="./IMAGES/fb.png"
+                            alt="facebook"></a>
                     <a href="https://www.instagram.com/akshay_kalhane_official/" target="_blank"><img
                             src="./IMAGES/instagram.png" alt="instagram"></a>
                     <a href="https://www.linkedin.com/in/akshay-kalhane-926046193/" target="_blank"><img
                             src="./IMAGES/ld.png" alt="linkedin"></a>
+
                 </div>
             </center>
         </footer>
 
     </div>
+
+    <script src="main.js">
+    </script>
 </body>
 
 </html>
