@@ -43,6 +43,8 @@ html{
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 0;
   /* border: 1px solid red; */
 }
 .navi {
@@ -371,7 +373,7 @@ footer h3 {
 }
 
 .footerimg img {
-  width: 5%;
+  max-width: 40px;
 }
 
 
